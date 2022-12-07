@@ -1,0 +1,15 @@
+{
+    "name": "main-site",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "ritwickdey.LiveServer"
+    ],
+    "mounts": [
+        "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/marlon/.aws,type=bind",
+        "source=${env:HOME}${env:USERPROFILE}/.vscode-bash-hists/main-siteomepage,target=/home/marlon/.bash_history,type=bind"
+    ],
+    "remoteUser": "marlon"
+}
