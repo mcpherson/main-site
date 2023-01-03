@@ -1,7 +1,7 @@
 /* background */
 
 html {
-    background: url(/site/resources/bg.jpg);
+    background: url(./resources/bg.jpg);
     background-size: cover;
 }
 
