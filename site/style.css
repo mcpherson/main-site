@@ -1,0 +1,98 @@
+/* background */
+
+html {
+    background: url(/site/resources/bg.jpg);
+    background-size: cover;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 9vh;
+    top: 0;
+    padding: 0;
+    background-color: rgb(34,34,34);
+    transition: height 333ms linear;
+    box-shadow: 0px 3px 7px rgb(13, 13, 13);
+}
+
+#header-logo {
+    max-height: 50%;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12vh;
+}
+
+#main-content {
+    min-height: 86vh;
+    background-color: rgba(34,34,34,0.95);
+    width: 90%;
+
+}
+
+#projects {
+    display: block;
+    justify-content: center;
+}
+
+#projects-heading-container {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects-heading-container img {
+    max-width: 90%;
+    max-height: 50px;
+}
+
+#projects-container {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.project {
+    background-color: rgb(34,34,34);
+    box-shadow: 0px 0px 10px rgb(13, 13, 13);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+}
+
+.project-title {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
+.project-image-container {
+    max-width: 90%;
+}
+
+.project-image-container img {
+    max-width: 100%;
+    box-shadow: 0px 0px 5px rgb(13, 13, 13);
+}

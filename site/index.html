@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <title>Marlon McPherson</title>
 </head>
 <body>
     <div id="header">
-        <div id="header-title"></div>
+        <img id="header-logo" src="/site/resources/logo.png" alt="Marlon McPherson">
         <div id="header-nav"></div>
     </div>
-    <div id="main">
-        <div id="title"></div>
+    <div id="main-container">
+        <div id="main-content">
+            <div id="projects">
+                <div id="projects-heading-container">
+                    <img src="./resources/projects.png" alt="Projects">
+                </div>
+                <div id="projects-container">
+                    <div id="project-0" class="project">
+                        <h1 class="project-title">AWS Book Finder</h1>
+                        <div class="project-image-container">
+                            <img src="./resources/book-finder-thumb.PNG" alt="Preview image of my Book Finder app">
+                        </div>
+                    </div>
+                    <div id="project-1" class="project">
+                        <h1 class="project-title">UTM Generator</h1>
+                        <div class="project-image-container">
+                            <img src="./resources/UTM-generator-thumb.PNG" alt="Preview image of my UTM Generator app">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script type="text/javascript" src="./app.js"></script>
 </body>
 </html>
